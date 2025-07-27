@@ -1,0 +1,21 @@
+[project]
+name = "bingefriend-tvmaze-models"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Tom Boone",email = "tbc@tomboone.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy >= 2.0.0"
+]
+
+[[tool.poetry.source]]
+name = "TBC_Feed"
+url = "https://pkgs.dev.azure.com/tomboonedotcom/BingeFriend/_packaging/TBC_Feed/pypi/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
