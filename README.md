@@ -1,4 +1,4 @@
-# bingefriend-tvmaz-models
+# bingefriend-tvmaze-models
 
 Python package containing SQLAlchemy models for TV show data imported from TVMaze API.
 
