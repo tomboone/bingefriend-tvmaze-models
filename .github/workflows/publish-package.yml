@@ -39,5 +39,8 @@ jobs:
           poetry config repositories.TBC_Feed https://pkgs.dev.azure.com/tomboonedotcom/BingeFriend/_packaging/TBC_Feed/pypi/upload/
           poetry config http-basic.TBC_Feed __token__ ${{ secrets.AZURE_DEVOPS_PAT }}
 
-      - name: Build and publish package
+      - name: Build package
+        run: poetry build
+
+      - name: Publish package
         run: poetry publish --repository TBC_Feed --no-interaction
